@@ -1,29 +1,29 @@
 //profile.jpg:
-import profile from '../asstes/profile.jpg';
+import profile from './profile.jpg';
 
 //nav bar icon: 
-import house from '../asstes/house.svg';
-import house_dark from '../asstes/house-dark.svg';
-import cap from '../asstes/graduation-cap.svg';
-import cap_dark from '../asstes/graduation-cap_dark.svg';
-import blog from '../asstes/newspaper.svg';
-import blog_dark from '../asstes/newspaper-dark.svg';
-import project from '../asstes/project.svg';
-import project_dark from '../asstes/project-dark.svg';
+import house from './house.svg';
+import house_dark from './house-dark.svg';
+import cap from './graduation-cap.svg';
+import cap_dark from './graduation-cap_dark.svg';
+import blog from './newspaper.svg';
+import blog_dark from './newspaper-dark.svg';
+import project from './project.svg';
+import project_dark from './project-dark.svg';
 
 //dark & light mode icon : 
-import sun from '../asstes/sun-solid.svg';
-import sun_dark from '../asstes/sun-solid_dark.svg';
-import moon from '../asstes/moon-solid.svg';
-import moon_dark from '../asstes/moon-solid-dark.svg';
+import sun from './sun-solid.svg';
+import sun_dark from './sun-solid_dark.svg';
+import moon from './moon-solid.svg';
+import moon_dark from './moon-solid-dark.svg';
 
 //contact icons :
-import mail from '../asstes/mail.svg';
-import mail_dark from '../asstes/mail-dark.svg';
-import phone from '../asstes/phone.svg';
-import phone_dark from '../asstes/phone-dark.svg';
-import location from '../asstes/earth-africa-solid.svg';
-import location_dark from '../asstes/earth-africa-solid.svg';
+import mail from './mail.svg';
+import mail_dark from './mail-dark.svg';
+import phone from './phone.svg';
+import phone_dark from './phone-dark.svg';
+import location from './earth-africa-solid.svg';
+import location_dark from './earth-africa-solid.svg';
 
 
 export const asstes ={
@@ -47,6 +47,13 @@ export const asstes ={
     location,
     location_dark
 }
+
+export const MyInfo = {
+    name: "Mellal Rida",
+    title: "Full-Stack Developer",
+    description:
+    "I am a graduate in Automation and Industrial Computing, with a deep interest in technology and software engineering. Over time, I have developed a strong passion for full-stack web development, allowing me to bring creative ideas to life through clean, scalable, and user-friendly applications. I focus on delivering modern digital solutions with attention to detail, performance, and user experience. Whether working on the frontend or backend, I aim to build reliable systems that solve real-world problems. I am always open to new challenges and continuously strive to grow both personally and professionally in the tech field."
+};
 
 export const projects = [
     {
@@ -77,7 +84,7 @@ export const projects = [
     {
         title: 'Dashboard Analytics',
         description:'Interactive real-time analytics dashboard with customizable charts, advanced filters, data export, and responsive design for business intelligence.',
-        bgImage: '/....',
+        bgImage: '/....'
     }
 ];
 
