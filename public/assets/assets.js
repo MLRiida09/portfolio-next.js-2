@@ -4,25 +4,25 @@ import profile from './profile.jpg';
 
 //nav bar icon: 
 import house from './house.svg';
-import house_dark from './house-dark.svg';
+import house_dark from './house-dark-mode.svg';
 import cap from './graduation-cap.svg';
-import cap_dark from './graduation-cap_dark.svg';
+import cap_dark from './graduation-cap-dark-mode.svg';
 import blog from './newspaper.svg';
 import blog_dark from './newspaper-dark.svg';
-import project from './project.svg';
-import project_dark from './project-dark.svg';
+import project from './folder.svg';
+import project_dark from './folder-dark-mode.svg';
 
 //dark & light mode icon : 
 import sun from './sun-solid.svg';
-import sun_dark from './sun-solid_dark.svg';
+import sun_dark from './sun-solid-dark.svg';
 import moon from './moon-solid.svg';
 import moon_dark from './moon-solid-dark.svg';
 
 //contact icons :
-import mail from './mail.svg';
-import mail_dark from './mail-dark.svg';
-import phone from './phone.svg';
-import phone_dark from './phone-dark.svg';
+import mail from './envelope-solid.svg';
+import mail_dark from './envelope-solid-dark.svg';
+import phone from './phone-solid.svg';
+import phone_dark from './phone-solid-dark.svg';
 import location from './earth-africa-solid.svg';
 import location_dark from './earth-africa-solid.svg';
 
@@ -50,7 +50,6 @@ export const assets = {
 
 export const MyInfo = {
     name: "Mellal Rida",
-    title: "Full-Stack Developer",
     description: "I am a graduate in Automation and Industrial Computing, with a deep interest in technology and software engineering. Over time, I have developed a strong passion for full-stack web development, allowing me to bring creative ideas to life through clean, scalable, and user-friendly applications. I focus on delivering modern digital solutions with attention to detail, performance, and user experience. Whether working on the frontend or backend, I aim to build reliable systems that solve real-world problems. I am always open to new challenges and continuously strive to grow both personally and professionally in the tech field."
 };
 
