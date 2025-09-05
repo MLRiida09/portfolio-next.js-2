@@ -2,6 +2,8 @@
 import React, { useState, useMemo } from 'react';
 import Image from 'next/image';
 import styles from './Blog.module.css';
+import ComingSoon from './ComingSoon';
+
 
 const Blog = ({ theme, assets, posts }) => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -74,7 +76,8 @@ const Blog = ({ theme, assets, posts }) => {
           Thoughts, tutorials, and insights about web development, technology, and my journey in the tech world.
           Stay updated with my latest articles and discoveries.
         </p>
-        {/* Search Bar */}
+        
+        {/* Search Bar 
         <div className={styles.searchContainer}>
           <input
             type="text"
@@ -84,7 +87,7 @@ const Blog = ({ theme, assets, posts }) => {
             className={styles.searchInput}
           />
         </div>
-
+*/}
         {/* Stats */}
         <div className={styles.stats}>
           <div className={styles.statItem}>
@@ -111,8 +114,8 @@ const Blog = ({ theme, assets, posts }) => {
           </button>
         ))}
       </div>
-
-      {/* Blog Posts Grid */}
+      <ComingSoon />
+      {/* Blog Posts Grid 
       <div className={styles.postsGrid}>
         {filteredPosts.map((post, index) => (
           <article
@@ -151,7 +154,7 @@ const Blog = ({ theme, assets, posts }) => {
         ))}
       </div>
 
-      {/* Empty State */}
+      {/* Empty State 
       {filteredPosts.length === 0 && (
         <div className={styles.emptyState}>
           <h3>No articles found</h3>
@@ -171,7 +174,7 @@ const Blog = ({ theme, assets, posts }) => {
         </div>
       )}
 
-      {/* Modal */}
+      {/* Modal 
       {selectedPost && (
         <div className={styles.modal} onClick={closeModal}>
           <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
@@ -234,6 +237,7 @@ const Blog = ({ theme, assets, posts }) => {
           </div>
         </div>
       )}
+        */}
     </div>
   );
 };

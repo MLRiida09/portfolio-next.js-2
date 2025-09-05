@@ -56,7 +56,7 @@ const ComingSoon = ({ assets, theme }) => {
         {/* CTA Button */}
         <div className={styles.comingSoonActions}>
           <a href="#" className="btn-main">
-            Go Back Home
+            Go Up
           </a>
         </div>
       </div>

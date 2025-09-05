@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useMemo } from 'react';
 import Image from 'next/image';
+import ComingSoon from './ComingSoon';
 import styles from './Projects.module.css';
 
 const Projects = ({ theme, assets, projects }) => {
@@ -104,8 +105,9 @@ const Projects = ({ theme, assets, projects }) => {
           </button>
         ))}
       </div>
-
-      {/* Projects Grid */}
+  <ComingSoon />
+  {/* Modal 
+      {/* Projects Grid 
       <div className={styles.projectsGrid}>
         {filteredProjects.map((project, index) => (
           <div
@@ -156,7 +158,7 @@ const Projects = ({ theme, assets, projects }) => {
                 </div>
               </div>
               
-              {/* Status Badge */}
+              {/* Status Badge 
               <div 
                 className={styles.statusBadge}
                 style={{ backgroundColor: getStatusColor(project.status) }}
@@ -197,7 +199,7 @@ const Projects = ({ theme, assets, projects }) => {
         ))}
       </div>
 
-      {/* Empty State */}
+      {/* Empty State 
       {filteredProjects.length === 0 && (
         <div className={styles.emptyState}>
           <div className={styles.emptyIcon}>
@@ -208,7 +210,7 @@ const Projects = ({ theme, assets, projects }) => {
         </div>
       )}
 
-      {/* Modal */}
+      {/* Modal *
       {selectedProject && (
         <div className={styles.modal} onClick={closeModal}>
           <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
@@ -326,11 +328,13 @@ const Projects = ({ theme, assets, projects }) => {
                     View Source Code
                   </a>
                 )}
+                
               </div>
             </div>
           </div>
         </div>
       )}
+    */}
     </div>
   );
 };

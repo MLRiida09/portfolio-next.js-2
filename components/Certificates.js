@@ -3,6 +3,7 @@ import { assets, certificates , categories } from '@/public/assets/assets';
 import React, { useState } from 'react';
 import Image from 'next/image';
 import styles from './Certificates.module.css';
+import ComingSoon from './ComingSoon';
 
 const Certificates = ({ theme, assets }) => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -59,8 +60,9 @@ const Certificates = ({ theme, assets }) => {
           </button>
         ))}
       </div>
-
-      {/* Certificates Grid */}
+     <ComingSoon />
+     {/*
+      Certificates Grid
       <div className={styles.certificatesGrid}>
         {filteredCertificates.map((certificate, index) => (
           <div
@@ -103,8 +105,8 @@ const Certificates = ({ theme, assets }) => {
           </div>
         ))}
       </div>
-
-      {/* Empty State */}
+      */}
+      {/* Empty State 
       {filteredCertificates.length === 0 && (
         <div className={styles.emptyState}>
           <div className={styles.emptyIcon}>
@@ -114,8 +116,8 @@ const Certificates = ({ theme, assets }) => {
           <p>No certificates match the selected filter criteria.</p>
         </div>
       )}
-
-      {/* Modal */}
+      */}
+      {/* Modal 
       {selectedCertificate && (
         <div className={styles.modal} onClick={closeModal}>
           <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
@@ -163,7 +165,9 @@ const Certificates = ({ theme, assets }) => {
             </div>
           </div>
         </div>
+        
       )}
+      */}
     </div>
   );
 };
