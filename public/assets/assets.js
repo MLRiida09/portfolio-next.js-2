@@ -3,72 +3,55 @@
 import profile from './profile.jpg';
 
 //nav bar icon: 
-import house from './house.svg';
-import house_dark from './house-dark-mode.svg';
+import user from './user.png';
+import user_dark from './user-dark.png';
 import cap from './graduation-cap.svg';
 import cap_dark from './graduation-cap-dark-mode.svg';
 import blog from './newspaper.svg';
 import blog_dark from './newspaper-dark.svg';
 import project from './folder.svg';
 import project_dark from './folder-dark-mode.svg';
-import download from './download.svg';
-import download_dark from './download-dark.svg';
-import rocket from './rocket.svg';
-import rocket_dark from './rocket-dark.svg';
+
+//close icon 
 import close from './close.svg';
 import close_dark from './close-dark.svg';
-import starts from './stars.svg';
 
-
-
-//dark & light mode icon : 
-import sun from './sun-solid.svg';
-import sun_dark from './sun-solid-dark.svg';
-import moon from './moon-solid.svg';
-import moon_dark from './moon-solid-dark.svg';
+//cv
 
 //contact icons :
-import mail from './envelope-solid.svg';
-import mail_dark from './envelope-solid-dark.svg';
-import phone from './phone-solid.svg';
-import phone_dark from './phone-solid-dark.svg';
-import location from './earth-africa-solid.svg';
-import location_dark from './earth-africa-solid.svg';
+import whatsapp from "./whatsapp.png"
+import email from './email.png'
+import location from './location.png'
+import linkedin from './linkedin.png'
+
 
 export const assets = { 
     profile,
-    house,
-    house_dark,
+    user,
+    user_dark,
     cap,
     cap_dark, 
     blog,
     blog_dark,
     project, 
     project_dark,
-    sun,
-    sun_dark,
-    moon,
-    moon_dark,
-    mail,
-    mail_dark,
-    phone,
-    phone_dark,
-    location,
-    location_dark,
-    download,
-    download_dark,
-    rocket,
-    rocket_dark,
-    close,
+    close, 
     close_dark,
-    starts,
+    whatsapp,
+    email,
+    location,
+    linkedin,
+    
+  };
    
-}
+
 
 export const MyInfo = {
     name: "Mellal Rida",
     description: "I am a graduate in Automation and Industrial Computing, with a deep interest in technology and software engineering. Over time, I have developed a strong passion for full-stack web development, allowing me to bring creative ideas to life through clean, scalable, and user-friendly applications. I focus on delivering modern digital solutions with attention to detail, performance, and user experience. Whether working on the frontend or backend, I aim to build reliable systems that solve real-world problems. I am always open to new challenges and continuously strive to grow both personally and professionally in the tech field."
+
 };
+
 
 
 export  const greetings = [
@@ -350,21 +333,52 @@ CREATE TABLE user_profiles (
 
 export const contactme = [
     {
-        icon: assets.mail, 
+        icon: assets.email, 
         title: "Email",
-        description: "mellala@gmail.com",
-        link: "mailto:mellala@gmail.com"
+        link: "mailto:mellala40@gmail.com"
     },
     {
-        icon: assets.phone,
-        title: "Phone", 
-        description: "+213 (xxx) xxx-xxxx",
-        link: "tel:+213xxxxxxxxx"
+        icon: assets.whatsapp,
+        title: "whatsapp", 
+        link: "https://wa.me/213668604206"
+        
     },
+    {
+        icon: assets.linkedin,
+        title: "LinkedIn",
+        link: "https://www.linkedin.com/in/rida-mellal-203989371/"
+    },
+
     {
         icon: assets.location,
         title: "Location",
-        description: "Blida, Algeria",
-        link: "#"
-    }
+        link: "https://maps.app.goo.gl/ZJUMPKKtPJbpYERs9"
+    },
+  
+];
+ export const languages = [
+  {
+    id: 1,
+    name: "Arabic",
+    level: 5, 
+    maxLevel: 5,
+    flag: "🇸🇦",
+    description: "Native"
+  },
+  {
+    id: 2,
+    name: "English", 
+    level: 4, 
+    maxLevel: 5,
+    flag: "🇺🇸",
+    description: "Advanced"
+  },
+  {
+    id: 3,
+    name: "French",
+    level: 3, 
+    maxLevel: 5,
+    flag: "🇫🇷",
+    description: "Intermediate"
+  }
 ];

@@ -8,9 +8,9 @@ function NavMenu({ assets, theme }) {
     <ul className="sidebar-menu">
       <li>
         <Link href="/">
-        <Image src={theme === "dark" ? assets.house_dark : assets.house}
+        <Image src={theme === "dark" ? assets.user_dark : assets.user}
         width={20}
-        height={20} alt="home" 
+        height={20} alt="user" 
         />
         Home
         </Link>

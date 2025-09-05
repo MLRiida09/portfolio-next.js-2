@@ -41,7 +41,6 @@ const WelcomeGreeting = ({ theme }) => {
       }`}
     >
       <div className={styles.welcomeCard}>
-        
         <button className={styles.closeButton} onClick={handleClose}>
           <Image
             src={theme === "dark" ? assets.close_dark : assets.close}
