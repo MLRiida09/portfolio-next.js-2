@@ -4,20 +4,30 @@
   margin: 30px 0;
 }
 
-.languagesContainer {
-  display: grid;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-/* Language Card */
+/* Single Languages Card */
 .languageCard {
   background: var(--sidebar-bg);
   border: 2px solid var(--border-color);
-  border-radius: 8px;
-  padding: 16px;
-  transition: all 0.3s ease;
+  border-radius: 12px;
+  padding: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+
+
+/* Language Item */
+.languageItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.languageItem:last-child {
+  border-bottom: none;
 }
 
 
@@ -27,13 +37,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 12px;
+  flex: 1;
 }
 
 .languageInfo {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 
@@ -58,86 +68,116 @@
   color: var(--main-color);
   font-weight: 600;
   background: rgba(2, 132, 199, 0.1);
-  padding: 3px 8px;
+  padding: 4px 12px;
   border-radius: 15px;
 }
 
 /* Progress Section */
 .languageProgress {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
+  margin-left: 20px;
 }
 
 .progressBars {
   display: flex;
-  gap: 4px;
-  flex-grow: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: var(--sidebar-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 3px;
+  padding: 2px;
+  height: 50px;
+  width: 18px;
+  gap: 1px;
+  position: relative;
+}
+
+/* Battery Tip */
+.batteryTip {
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 3px;
+  background: var(--border-color);
+  border-radius: 1px;
 }
 
 .progressBar {
-  height: 6px;
-  flex: 1;
-  border-radius: 3px;
+  width: 100%;
+  height: 8px;
+  border-radius: 1px;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
 }
 
 .progressBar.filled {
-  background: linear-gradient(90deg, var(--main-color) 0%, #38bdf8 100%);
-  box-shadow: 0 2px 4px rgba(2, 132, 199, 0.3);
+  background: linear-gradient(180deg, #38bdf8 0%, var(--main-color) 100%);
+  box-shadow: 0 1px 3px rgba(2, 132, 199, 0.4);
 }
 
 .progressBar.filled::after {
   content: '';
   position: absolute;
-  top: 0;
-  left: -100%;
+  top: -100%;
+  left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-  animation: shimmer 2s infinite;
+  background: linear-gradient(180deg, transparent, rgba(255,255,255,0.6), transparent);
+  animation: shimmerVertical 2s infinite;
 }
 
 .progressBar.empty {
-  background: var(--border-color);
-  opacity: 0.5;
+  background: rgba(226, 232, 240, 0.3);
+  opacity: 1;
 }
 
 .progressText {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   color: var(--span-color);
-  min-width: 30px;
   text-align: center;
 }
 
-/* Shimmer Animation */
-@keyframes shimmer {
+/* Animations */
+@keyframes shimmerVertical {
   0% {
-    left: -100%;
+    top: -100%;
   }
   100% {
-    left: 100%;
+    top: 100%;
   }
 }
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-  .languageHeader {
+  .languageCard {
+    padding: 16px;
+  }
+
+  .languageItem {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
+    padding: 16px 0;
+  }
+
+
+
+  .languageHeader {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
   }
 
   .languageInfo {
     width: 100%;
-  }
-
-  .languageName {
-    font-size: 16px;
   }
 
   .languageDescription {
@@ -145,15 +185,22 @@
   }
 
   .languageProgress {
-    gap: 12px;
+    align-self: center;
+    margin-left: 0;
   }
 
   .progressBars {
-    gap: 4px;
+    height: 40px;
+    width: 16px;
   }
 
   .progressBar {
     height: 6px;
+  }
+
+  .batteryTip {
+    width: 6px;
+    height: 2px;
   }
 }
 
@@ -162,10 +209,11 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-:root[data-theme="dark"] .languageCard:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-}
 
 :root[data-theme="dark"] .progressBar.filled {
-  box-shadow: 0 2px 4px rgba(56, 189, 248, 0.4);
+  box-shadow: 0 1px 3px rgba(56, 189, 248, 0.4);
+}
+
+:root[data-theme="dark"] .batteryTip {
+  background: var(--border-color);
 }

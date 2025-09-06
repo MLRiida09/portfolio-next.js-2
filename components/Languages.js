@@ -3,18 +3,16 @@ import React from 'react';
 import styles from './Languages.module.css';
 import { languages } from '@/public/assets/assets';
 
-
-
-
-
 function Languages() {
   return (
     <div className={styles.languagesSection}>
+      <div className="section-title">
+        <h2 className="section-title-text">Languages</h2>
+      </div>
       
-      
-      <div className={styles.languagesContainer}>
+      <div className={styles.languageCard}>
         {languages.map((language) => (
-          <div key={language.id} className={styles.languageCard}>
+          <div key={language.id} className={styles.languageItem}>
             <div className={styles.languageHeader}>
               <div className={styles.languageInfo}>
                 <div className={styles.languageNames}>
@@ -26,14 +24,18 @@ function Languages() {
             
             <div className={styles.languageProgress}>
               <div className={styles.progressBars}>
-                {Array.from({ length: language.maxLevel }, (_, index) => (
-                  <div 
-                    key={index}
-                    className={`${styles.progressBar} ${
-                      index < language.level ? styles.filled : styles.empty
-                    }`}
-                  />
-                ))}
+                {Array.from({ length: language.maxLevel }, (_, index) => {
+                  const reversedIndex = language.maxLevel - 1 - index;
+                  return (
+                    <div
+                      key={reversedIndex}
+                      className={`${styles.progressBar} ${
+                        reversedIndex < language.level ? styles.filled : styles.empty
+                      }`}
+                    />
+                  );
+                })}
+                <div className={styles.batteryTip}></div>
               </div>
               <span className={styles.progressText}>
                 {language.level}/{language.maxLevel}
