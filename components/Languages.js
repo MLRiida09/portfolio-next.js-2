@@ -9,14 +9,14 @@ function Languages() {
       <div className="section-title">
         <h2 className="section-title-text">Languages</h2>
       </div>
-      
       <div className={styles.languageCard}>
         {languages.map((language) => (
           <div key={language.id} className={styles.languageItem}>
             <div className={styles.languageHeader}>
               <div className={styles.languageInfo}>
                 <div className={styles.languageNames}>
-                  <h3 className={styles.languageName}>{language.name}</h3>
+                  <p className={styles.languageName}>{language.name}</p>
+                  <p className={styles.languageLevel}>{language.icando}</p>
                 </div>
               </div>
               <span className={styles.languageDescription}>{language.description}</span>

@@ -11,6 +11,8 @@ import blog from './newspaper.svg';
 import blog_dark from './newspaper-dark.svg';
 import project from './folder.svg';
 import project_dark from './folder-dark-mode.svg';
+import code from './coding.png';
+import code_dark from './coding-dark.png';
 
 //close icon 
 import close from './close.svg';
@@ -41,6 +43,8 @@ export const assets = {
     email,
     location,
     linkedin,
+    code,
+    code_dark,
     
   };
    
@@ -48,7 +52,7 @@ export const assets = {
 
 export const MyInfo = {
     name: "Mellal Rida",
-    description: "I am a graduate in Automation and Industrial Computing, with a deep interest in technology and software engineering. Over time, I have developed a strong passion for full-stack web development, allowing me to bring creative ideas to life through clean, scalable, and user-friendly applications. I focus on delivering modern digital solutions with attention to detail, performance, and user experience. Whether working on the frontend or backend, I aim to build reliable systems that solve real-world problems. I am always open to new challenges and continuously strive to grow both personally and professionally in the tech field."
+    description: "I am a passionate Full-Stack Web Developer with a background in Automation and Industrial Computing. I specialize in building modern, scalable, and user-friendly applications, focusing on performance, clean code, and great user experience. Always eager to take on new challenges, I aim to deliver innovative digital solutions that make a real impact."
 
 };
 
@@ -359,26 +363,23 @@ export const contactme = [
  export const languages = [
   {
     id: 1,
-    name: "Arabic",
+    name: "Arabic: I speak and write Arabic with full proficiency",
     level: 5, 
     maxLevel: 5,
-    flag: "🇸🇦",
-    description: "Native"
+    description: "Native",
   },
   {
     id: 2,
-    name: "English", 
+    name: "English: I communicate fluently and write technical texts", 
     level: 4, 
     maxLevel: 5,
-    flag: "🇺🇸",
     description: "Advanced"
   },
   {
     id: 3,
-    name: "French",
+    name: "French: I understand and speak French in daily use",
     level: 3, 
     maxLevel: 5,
-    flag: "🇫🇷",
     description: "Intermediate"
   }
 ];

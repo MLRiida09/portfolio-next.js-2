@@ -12,13 +12,13 @@ function NavMenu({ assets, theme }) {
         width={20}
         height={20} alt="user" 
         />
-        Home
+        About Me
         </Link>
       </li>
       <li>
         <Link href="/Certificates">
           <Image src={theme === "dark" ? assets.cap_dark : assets.cap}
-           width={20}
+            width={20}
             height={20} alt="certificates" 
             />
           Certificates
@@ -27,17 +27,26 @@ function NavMenu({ assets, theme }) {
       <li>
         <Link href="/Project">
           <Image src={theme === "dark" ? assets.project_dark : assets.project}
-           width={20}
+            width={20}
             height={20} alt="project" 
             />
-          Project
+          My Project
+        </Link>
+      </li>
+      <li>
+        <Link href="/codes">
+        <Image src={theme === "dark" ? assets.code_dark : assets.code}
+            width={20}
+            height={20} alt="codes" 
+            />
+          Mini Projects
         </Link>
       </li>
       <li>
         <Link href="/Blog">
           <Image src={theme === "dark" ? assets.blog_dark : assets.blog}
-           width={20}
-            height={20} alt="blog" 
+            width={20}
+            height={20} alt="blog-icon" 
             />
           Blog
         </Link>

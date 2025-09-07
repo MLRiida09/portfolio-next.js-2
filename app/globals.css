@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -50,6 +48,7 @@ body {
   z-index: 1000;
   display: flex;
   flex-direction: column;
+  justify-content: space-between ;
 }
 
 /* Profile Section */
@@ -115,7 +114,6 @@ body {
   list-style: none;
   padding: 20px 0;
   margin: 0;
-  flex-grow: 1;
 }
 
 .sidebar-menu li {
@@ -149,9 +147,10 @@ body {
 
 /* Theme Toggle Container */
 .theme-toggle-container {
-  padding: 20px;
+  position: sticky;
+  bottom: 0;
+  padding: 15px 20px;
   border-top: 1px solid var(--border-color);
-  margin-top: auto;
 }
 
 .theme-toggle-btn {

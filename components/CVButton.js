@@ -5,7 +5,7 @@
     <div className="cv-container">
       <a href="/assets/My-CV.pdf" download className="btn-main">
        
-        <span>Download CV</span>
+        <span>My résumé</span>
       </a>
     </div>
   );
