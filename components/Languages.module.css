@@ -10,7 +10,6 @@
   border: 2px solid var(--border-color);
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
@@ -135,6 +134,42 @@
   text-align: center;
 }
 
+
+/* Add these to your Languages.module.css file */
+
+.toggleButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.toggleButton:hover {
+  transform: scale(1.1);
+}
+
+.chevronIcon {
+  transition: transform 0.3s ease;
+  filter: brightness(0.8);
+}
+
+.chevronIcon:hover {
+  filter: brightness(1);
+}
+
+.fontAwesomeIcon {
+  font-size: 12px;
+  color: #666;
+  transition: color 0.2s ease;
+}
+
+.fontAwesomeIcon:hover {
+  color: #333;
+}
 /* Animations */
 @keyframes shimmerVertical {
   0% {

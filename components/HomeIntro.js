@@ -13,7 +13,7 @@ function HomeIntro({ theme, assets }) {
       </h3>
       <p>{MyInfo.description}</p>
       <CVButton theme={theme} assets={assets} />
-      <Languages theme={theme} assets={assets} />
+      <Languages/>
       {/* Contact Footer */}
       <div className="home-contact-footer">
         <div className="contact-links">

@@ -17,7 +17,8 @@ import code_dark from './coding-dark.png';
 //close icon 
 import close from './close.svg';
 import close_dark from './close-dark.svg';
-
+import chevron_right from './chevron-right-solid-full.svg';
+import chevron_down from './chevron-down-solid-full.svg';
 //cv
 
 //contact icons :
@@ -45,7 +46,8 @@ export const assets = {
     linkedin,
     code,
     code_dark,
-    
+    chevron_right,
+    chevron_down,
   };
    
 
