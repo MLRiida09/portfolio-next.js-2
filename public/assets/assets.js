@@ -19,7 +19,13 @@ import close from './close.svg';
 import close_dark from './close-dark.svg';
 import chevron_right from './chevron-right-solid-full.svg';
 import chevron_down from './chevron-down-solid-full.svg';
-//cv
+
+//cv 
+
+
+//sun-moon :
+import sun from './sun.png'
+import moon from './moon.png'
 
 //contact icons :
 import whatsapp from "./whatsapp.png"
@@ -48,6 +54,8 @@ export const assets = {
     code_dark,
     chevron_right,
     chevron_down,
+    sun,
+    moon,
   };
    
 
